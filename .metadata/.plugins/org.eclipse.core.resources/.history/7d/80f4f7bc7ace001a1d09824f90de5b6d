@@ -1,0 +1,30 @@
+package com.example.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.example.demo.dto.UserDto;
+import com.example.demo.entity.User;
+
+@Component
+public class UserServiceImpl implements UserService{
+	@Autowired
+	private static ArrayList<User> listUser = new ArrayList<User>();
+	
+	static {
+		
+		listUser.add(new User(1, "Nguyen A", "a@gmail.com", "098", "hihi.png", "Aa123456"));
+		listUser.add(new User(2, "Nguyen B", "a@gmail.com", "098", "hihi.png", "Aa123456"));
+		listUser.add(new User(3, "Nguyen AA", "a@gmail.com", "098", "hihi.png", "Aa123456"));
+		listUser.add(new User(4, "Nguyen AB", "a@gmail.com", "098", "hihi.png", "Aa123456"));
+	}
+
+	@Override
+	public List<UserDto> getListUser() {
+		return listUser;
+	}
+
+}
