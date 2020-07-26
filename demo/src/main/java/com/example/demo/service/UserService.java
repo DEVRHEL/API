@@ -11,7 +11,13 @@ import com.example.demo.model.User;
 public interface UserService {
 	public List<UserDto> getListUser();
 	
-	public UserDto getUserById(int id);
+	public UserDto getUserById(Long id);
 	
 	public List<UserDto> searchUser(String keyword);
+	
+	public int removeUser(Long id);
+	
+	public int saveUser(User userEntity);
+
+	public int updateUser(Long id, User user);
 }

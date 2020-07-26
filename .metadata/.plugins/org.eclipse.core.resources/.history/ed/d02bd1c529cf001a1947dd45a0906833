@@ -1,0 +1,9 @@
+package com.example.demo.exception;
+
+import org.springframework.dao.EmptyResultDataAccessException;
+
+public class NotFoundDataDeleteException extends EmptyResultDataAccessException{
+	public NotFoundDataDeleteException(String message) {
+		super(message);
+	}
+}
