@@ -1,7 +1,7 @@
 package com.example.demo.mapper;
 
 import com.example.demo.dto.UserDto;
-import com.example.demo.entity.User;
+import com.example.demo.model.User;
 
 public class UserMapper {
 	public static UserDto toUserDto(User user) {

@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDto {
-	private int id;
+	private Long id;
 	
 	private String name;
 	
@@ -24,7 +24,7 @@ public class UserDto {
 		
 	}
 
-	public UserDto(int id, String name, String email, String phone, String avatar) {
+	public UserDto(Long id, String name, String email, String phone, String avatar) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -33,11 +33,11 @@ public class UserDto {
 		this.avatar = avatar;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
