@@ -11,6 +11,7 @@ public class UserMapper {
 		tmp.setEmail(user.getEmail());
 		tmp.setPhone(user.getPhone());
 		tmp.setAvatar(user.getAvatar());
+		tmp.setCode(user.getCode().getCode());
 		
 		return tmp;
 	}

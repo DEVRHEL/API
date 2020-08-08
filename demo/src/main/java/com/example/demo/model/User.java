@@ -36,11 +36,14 @@ public class User{
 	@Column(name = "password")
 	private String password;
 	
+	@Column(name = "code")
+	private Enumcode code;
+	
 	public User() {
 		
 	}
 
-	public User(Long id, String name, String email, String phone, String avatar, String password) {
+	public User(Long id, String name, String email, String phone, String avatar, String password, Enumcode code) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -48,6 +51,7 @@ public class User{
 		this.phone = phone;
 		this.avatar = avatar;
 		this.password = password;
+		this.code = code;
 	}
 
 	public Long getId() {
@@ -96,5 +100,13 @@ public class User{
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public Enumcode getCode() {
+		return code;
+	}
+
+	public void setCode(Enumcode code) {
+		this.code = code;
 	}
 }

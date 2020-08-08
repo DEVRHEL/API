@@ -1,5 +1,7 @@
 package com.example.demo.dto;
 
+import com.example.demo.model.Enumcode;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,17 +22,20 @@ public class UserDto {
 	
 	private String avatar;
 	
+	private String code;
+	
 	public UserDto() {
 		
 	}
 
-	public UserDto(Long id, String name, String email, String phone, String avatar) {
+	public UserDto(Long id, String name, String email, String phone, String avatar, String code) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
 		this.avatar = avatar;
+		this.code = code;
 	}
 
 	public Long getId() {
@@ -71,6 +76,14 @@ public class UserDto {
 
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
 	}
 	
 }
