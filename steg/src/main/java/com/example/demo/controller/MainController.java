@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 	
-	@GetMapping("/")
-	public String home() {
-		return "pagea";
-		
-	}
-	
-	@GetMapping("/test")
-	public String page() {
-		return "pageb";
-	}
+//	@GetMapping("/")
+//	public String home() {
+//		return "pagea";
+//		
+//	}
+//	
+//	@GetMapping("/test")
+//	public String page() {
+//		return "pageb";
+//	}
 }
